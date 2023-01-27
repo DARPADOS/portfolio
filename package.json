@@ -1,0 +1,19 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "npx astro-i18next generate && astro dev",
+    "start": "npx astro-i18next generate && astro dev",
+    "build": "npx astro-i18next generate && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "astro": "^1.9.1"
+  },
+  "dependencies": {
+    "astro-i18next": "1.0.0-beta.15"
+  }
+}

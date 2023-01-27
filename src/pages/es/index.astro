@@ -1,0 +1,54 @@
+---
+import i18next, { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Card from "../../components/Card.astro";
+import { Trans } from "astro-i18next/components";
+
+changeLanguage("es");
+---
+<Layout title={t("home.title")} description={t("home.presentation")}>
+	<Navbar/>
+	<main>
+		<h1>{t("home.presentation-title")}<span class="text-gradient">Jose Luis Allaucca</span></h1>
+		<p class="presentation">
+			<Trans i18nKey="home.presentation">
+				<strong></strong> <strong></strong> <strong></strong> <strong></strong><strong></strong> <strong></strong><strong></strong>
+			</Trans>
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 10rem 3rem;
+		max-width: 100ch;
+		max-height: 100%;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	.presentation {
+		padding: 2rem;
+		font-size: 1.5rem;
+		font-weight: 200;
+		text-align: center;
+
+	}
+
+	.presentation strong {
+		color: rgb(--accent)
+	}
+</style>

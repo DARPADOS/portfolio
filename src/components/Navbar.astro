@@ -1,0 +1,63 @@
+---
+import { LanguageSelector } from "astro-i18next/components";
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+import Logo from "./Logo.astro";
+import NavItem from "./NavItem.astro";
+
+const links = [
+  {
+    link: localizePath("/"),
+    label: t("nav.home.label")
+  },
+  {
+    link: localizePath("/#projects"),
+    label: t("nav.projects.label")
+  },
+  {
+    link: localizePath("/#contact"),
+    label: t("nav.contact.label")
+  },
+]
+---
+
+<nav class="navbar">
+  <a href={localizePath("/")}>
+    <Logo/>
+  </a>
+  <ul class="pages">
+    {links.map( el => <NavItem label={el.label} link={el.link}/>)}
+  </ul>
+  <LanguageSelector showFlag={false} class="languages" />
+</nav>
+
+
+<style>
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around ;
+    padding: 1rem;
+    align-content: center;
+  }
+
+  .languages {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-weight: 600;
+    border: 2px solid var(--color-border);
+    appearance: none;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0.4em 0.6em; 
+    font-family: system-ui, sans-serif;
+    font-size: var(--font-size-base);
+    height: fit-content;  
+    align-self: center;
+  }
+</style>

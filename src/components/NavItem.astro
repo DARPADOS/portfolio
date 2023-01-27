@@ -1,0 +1,36 @@
+---
+
+export interface Props {
+	link: string,
+  label: string
+}
+
+const {link, label} = Astro.props
+---
+<li>
+  <a href={link}>
+    {label}
+  </a>
+</li>
+
+<style>
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  a {
+    padding: 0.4rem 0.9rem;
+    border-radius: 5px;
+    height: max-content;
+    font-size: 1.2rem;
+    color: #494949;
+    font-weight: 600;
+    text-decoration: none;  
+    
+  }
+  a:hover {
+    background-color: #dadada;
+  }
+  
+</style>

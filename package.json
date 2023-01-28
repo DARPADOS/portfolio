@@ -8,7 +8,8 @@
     "start": "npx astro-i18next generate && astro dev",
     "build": "npx astro-i18next generate && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test-prod": "npm run build && npx servor dist index.html 3000 --reload --browse --static"
   },
   "devDependencies": {
     "astro": "^1.9.1"

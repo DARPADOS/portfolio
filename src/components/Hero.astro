@@ -1,0 +1,43 @@
+---
+import { Trans } from "astro-i18next/components";
+import { t } from "i18next";
+---
+
+<main>
+    <h1>{t("home.presentation-title")}<span class="text-gradient">Jose Luis Allaucca</span></h1>
+    <p class="presentation">
+      <Trans i18nKey="home.presentation">
+        <strong></strong> <strong></strong> <strong></strong> <strong></strong><strong></strong> <strong></strong><strong></strong>
+      </Trans>
+    </p>
+</main>
+<style>
+  .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	main {
+		margin: auto;
+		padding: calc(var(--top-padding) + 8rem) 1rem 10rem 1rem	;
+		max-width: 100ch;
+		height: 100vh;
+	}
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.presentation {
+		padding: 2rem 1rem;
+		font-size: 1.5rem;
+		font-weight: 200;
+		text-align: center;
+	}
+  .presentation strong {
+		color: rgb(--accent)
+	}
+</style>

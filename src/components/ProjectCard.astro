@@ -1,0 +1,62 @@
+---
+import LinkIcon from '../icons/LinkIcon.astro';
+import GithubIcon from '../icons/GithubIcon.astro';
+
+export interface Props {
+  id: number,
+  name: string,
+  description: string,
+  image: string,
+  links: {
+    github?: string,
+    web?: string
+  }
+}
+const {id, name, description, image, links} = Astro.props;
+const {github, web} = links;
+---
+
+<div class="card">
+  <div class="card-title">
+    <h2>{name}</h2>
+  </div>
+  <div class="card-body">
+    <img src={image} width="100%" alt={description}/>
+    <p class="description">{description}</p>
+  </div>
+  <div class="card-footer">
+    { github && <a href={github} target="_blank"><GithubIcon/></a>}
+    { web && <a href={web} target="_blank"><LinkIcon/></a>}
+  </div>
+</div>
+
+<style>
+  .card {
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 400px;
+  }
+
+  .card-title {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .description {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  .card-footer {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: end;
+  }
+</style>

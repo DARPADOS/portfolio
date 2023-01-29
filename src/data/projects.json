@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "es": "🧮 Calculadora de precio mínimo de venta",
+      "en": "🧮 Minimun Sell Price Calculator"
+    },
+    "image":"/images/projects/min-sell-price-calculator.webp",
+    "description": {
+      "es": "👉 Aplicación en next.js para calcular el precio minimo de venta de un nft teniendo en cuenta los costos de la transacción usando la api de la red solana.",
+      "en": "👉 Application in next.js to calculate the minimum sale price of a nft taking into account the transaction costs using the solana network api."
+    },
+    "links": {
+      "github":"https://github.com/DARPADOS/nft-min-sell-price-solana",
+      "web":"https://nft-min-sell-price-solana.vercel.app/" 
+    }
+  }
+]

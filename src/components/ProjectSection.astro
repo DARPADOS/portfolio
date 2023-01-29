@@ -1,0 +1,33 @@
+---
+import projects from "../data/projects.json";
+import ProjectCard from "./ProjectCard.astro";
+import i18next from "i18next";
+
+const lan = i18next.language
+
+---
+<div class="projects-section" id="projects">
+  <h1>
+    Projects
+  </h1>
+	<div class="projects-card-wrap">
+		{projects.map( el => {
+			const {id, name, description, image, links} = el
+			return <ProjectCard id={id} name={name[lan]} description={description[lan]} image={image} links={links} />
+		})}
+	</div>
+</div>
+
+
+<style>
+	.projects-section {
+		margin: auto;
+		padding: calc(var(--top-padding) + 1rem) 1rem 1rem 1rem	;
+		max-width: 100ch;
+		height: 100vh;
+	}
+
+	.projects-card-wrap {
+		padding-top: 0.8rem;
+	}
+</style>

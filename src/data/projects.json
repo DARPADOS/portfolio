@@ -1,9 +1,26 @@
 [
   {
     "id": 1,
+    "emoji": "🎓",
     "name": {
-      "es": "🧮 Calculadora de precio mínimo de venta",
-      "en": "🧮 Minimun Sell Price Calculator"
+      "es": "Administrador de calificaciones academicas",
+      "en": "Academic Grades Manager"
+    },
+    "image":"/images/projects/min-sell-price-calculator.webp",
+    "description": {
+      "es": "👉 Aplicación web creada con Next.js, Tailwind y Mongodb para gestionar las calificaciones academicas de los cursos de un semestre.",
+      "en": "👉 Web application created with Next.js, Tailwind and Mongodb to manage the academic grades of the courses of a semester."
+    },
+    "links": {
+      "github":"https://github.com/DARPADOS/academic-grades-manager"
+    }
+  },
+  {
+    "id": 2,
+    "emoji": "🧮",
+    "name": {
+      "es": "Calculadora de precio mínimo de venta",
+      "en": "Minimun Sell Price Calculator"
     },
     "image":"/images/projects/min-sell-price-calculator.webp",
     "description": {
@@ -13,6 +30,38 @@
     "links": {
       "github":"https://github.com/DARPADOS/nft-min-sell-price-solana",
       "web":"https://nft-min-sell-price-solana.vercel.app/" 
+    }
+  },
+  {
+    "id": 3,
+    "emoji": "🐲",
+    "name": {
+      "es": "Pokeapi front",
+      "en": "Pokeapi front"
+    },
+    "image":"/images/projects/min-sell-price-calculator.webp",
+    "description": {
+      "es": "👉 Pagina web utilizando renderizado en el lado del servidor con Thymeleaf, Java y Tailwind. Para recuperar información sobre pokemons y sus evoluciones se utiliza la api de pokeapi.co.",
+      "en": "👉 Web page using server side rendering with Thymeleaf, Java and Tailwind. To retrieve information about pokemons and their evolutions, the pokeapi.co api is used."
+    },
+    "links": {
+      "github":"https://github.com/DARPADOS/mvc-pokeapi"
+    }
+  },
+  {
+    "id": 4,
+    "emoji": "📖",
+    "name": {
+      "es": "PrestaBooks",
+      "en": "PrestaBooks"
+    },
+    "image":"/images/projects/min-sell-price-calculator.webp",
+    "description": {
+      "es": "👉 Aplicación web en Java y Thymeleaf para gestionar los usuarios, libros, autores y prestamos de una biblioteca creada para un curso de pruebas de software.",
+      "en": "👉 Web application in Java and Thymeleaf to manage the users, books, authors and loans of a library created for a software testing course."
+    },
+    "links": {
+      "github":"https://github.com/DARPADOS/SX71-prestabooks"
     }
   }
 ]

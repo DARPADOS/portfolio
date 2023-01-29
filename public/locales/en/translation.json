@@ -8,5 +8,9 @@
     "home.label": "Home",
     "projects.label": "Projects",
     "contact.label": "Contact"
+  },
+  "projects": {
+    "github.aria-label": "Link to access the github of the project ",
+    "web.aria-label": "Link to access the website of the project "
   }
 }

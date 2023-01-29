@@ -12,8 +12,8 @@ const lan = i18next.language
   </h1>
 	<div class="projects-card-wrap">
 		{projects.map( el => {
-			const {id, name, description, image, links} = el
-			return <ProjectCard id={id} name={name[lan]} description={description[lan]} image={image} links={links} />
+			const {id, emoji, name, description, image, links} = el
+			return <ProjectCard id={id} emoji={emoji} name={name[lan]} description={description[lan]} image={image} links={links} />
 		})}
 	</div>
 </div>

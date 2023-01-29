@@ -9,5 +9,9 @@
     "home.label": "Inicio",
     "projects.label": "Proyectos",
     "contact.label": "Contacto"
+  },
+  "projects": {
+    "github.aria-label": "Enlace para acceder al github del proyecto ",
+    "web.aria-label": "Enlace para acceder a la página web del proyecto "
   }
 }

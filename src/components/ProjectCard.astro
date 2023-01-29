@@ -1,9 +1,11 @@
 ---
 import LinkIcon from '../icons/LinkIcon.astro';
 import GithubIcon from '../icons/GithubIcon.astro';
+import { t } from "i18next";
 
 export interface Props {
   id: number,
+  emoji: string
   name: string,
   description: string,
   image: string,
@@ -12,21 +14,21 @@ export interface Props {
     web?: string
   }
 }
-const {id, name, description, image, links} = Astro.props;
+const {id, emoji, name, description, image, links} = Astro.props;
 const {github, web} = links;
 ---
 
 <div class="card">
   <div class="card-title">
-    <h2>{name}</h2>
+    <h2>{`${emoji} ${name}`}</h2>
   </div>
   <div class="card-body">
     <img src={image} width="100%" alt={description}/>
     <p class="description">{description}</p>
   </div>
   <div class="card-footer">
-    { github && <a href={github} target="_blank"><GithubIcon/></a>}
-    { web && <a href={web} target="_blank"><LinkIcon/></a>}
+    { github && <a href={github} target="_blank" aria-label={`${t('projects.github.aria-label')}${name}`}><GithubIcon/></a>}
+    { web && <a href={web} target="_blank" aria-label={`${t('projects.web.aria-label')}${name}`}><LinkIcon/></a>}
   </div>
 </div>
 

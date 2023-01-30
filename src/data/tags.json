@@ -1,0 +1,72 @@
+{
+  "nextjs": {
+    "label":"Next.js",
+    "bg-color": "",
+    "icon": "nextjs",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "react": {
+    "label":"React.js",
+    "bg-color": "",
+    "icon": "react",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "tailwind": {
+    "label":"Tailwind",
+    "bg-color": "",
+    "icon": "tailwind",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "prisma": {
+    "label":"Prisma",
+    "bg-color": "",
+    "icon": "prisma",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "typescript": {
+    "label":"Typescript",
+    "bg-color": "",
+    "icon": "typescript",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "postgres": {
+    "label":"PostgreSQL",
+    "bg-color": "",
+    "icon": "postgres",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "solana": {
+    "label":"Solana",
+    "bg-color": "",
+    "icon": "solana",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "thymeleaf": {
+    "label":"Thymeleaf",
+    "bg-color": "",
+    "icon": "thymeleaf",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "java": {
+    "label":"Java 11",
+    "bg-color": "",
+    "icon": "java",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "spring-boot": {
+    "label":"Spring Boot",
+    "bg-color": "",
+    "icon": "spring-boot",
+    "icon-color": "",
+    "text-color": ""
+  }
+}

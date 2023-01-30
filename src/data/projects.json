@@ -13,7 +13,10 @@
     },
     "links": {
       "github":"https://github.com/DARPADOS/academic-grades-manager"
-    }
+    },
+    "tags": [
+      "nextjs", "react", "tailwind", "prisma", "typescript", "postgres"
+    ]
   },
   {
     "id": 2,
@@ -30,7 +33,10 @@
     "links": {
       "github":"https://github.com/DARPADOS/nft-min-sell-price-solana",
       "web":"https://nft-min-sell-price-solana.vercel.app/" 
-    }
+    },
+    "tags": [
+      "nextjs", "react", "tailwind", "solana"
+    ]
   },
   {
     "id": 3,
@@ -46,7 +52,10 @@
     },
     "links": {
       "github":"https://github.com/DARPADOS/mvc-pokeapi"
-    }
+    },
+    "tags": [
+      "thymeleaf", "java", "spring-boot"
+    ]
   },
   {
     "id": 4,
@@ -62,6 +71,9 @@
     },
     "links": {
       "github":"https://github.com/DARPADOS/SX71-prestabooks"
-    }
+    },
+    "tags": [
+      "thymeleaf", "java", "spring-boot", "postgres"
+    ]
   }
 ]

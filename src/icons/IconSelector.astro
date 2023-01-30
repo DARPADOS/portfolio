@@ -1,0 +1,47 @@
+---
+import GithubIcon from './GithubIcon.astro';
+import JavaIcon from './JavaIcon.astro';
+import NextjsIcon from './NextjsIcon.astro';
+import PostgreSQLIcon from './PostgreSQLIcon.astro';
+import PrismaIcon from './PrismaIcon.astro';
+import ReactIcon from './ReactIcon.astro';
+import SolanaIcon from './SolanaIcon.astro';
+import SpringBootIcon from './SpringBootIcon.astro';
+import TailwindIcon from './TailwindIcon.astro';
+import ThymeleafIcon from './ThymeleafIcon.astro';
+import TypescriptIcon from './TypescriptIcon.astro';
+
+export interface Props {
+  icon: string
+}
+
+const {icon} = Astro.props
+---
+{
+  (() => {
+    switch (icon) {
+      case "nextjs":
+        return <NextjsIcon />
+      case "react":
+        return <ReactIcon />
+      case "tailwind":
+        return <TailwindIcon />
+      case "prisma":
+        return <PrismaIcon />
+      case "typescript":
+        return <TypescriptIcon />
+      case "postgres":
+        return <PostgreSQLIcon />
+      case "solana":
+        return <SolanaIcon />
+      case "thymeleaf":
+        return <ThymeleafIcon />
+      case "java":
+        return <JavaIcon />
+      case "spring-boot":
+        return <SpringBootIcon />
+      default:
+        break;
+    }
+  })()
+}

@@ -42,10 +42,10 @@
     "id": 3,
     "emoji": "🐲",
     "name": {
-      "es": "Pokeapi front",
-      "en": "Pokeapi front"
+      "es": "Poke App",
+      "en": "Poke App"
     },
-    "image":"/images/projects/min-sell-price-calculator.webp",
+    "image":"/images/projects/poke-app-2.webp",
     "description": {
       "es": "👉 Pagina web utilizando renderizado en el lado del servidor con Thymeleaf, Java y Tailwind. Para recuperar información sobre pokemons y sus evoluciones se utiliza la api de pokeapi.co.",
       "en": "👉 Web page using server side rendering with Thymeleaf, Java and Tailwind. To retrieve information about pokemons and their evolutions, the pokeapi.co api is used."
@@ -54,7 +54,7 @@
       "github":"https://github.com/DARPADOS/mvc-pokeapi"
     },
     "tags": [
-      "thymeleaf", "java", "spring-boot"
+      "thymeleaf", "java", "spring-boot", "tailwind"
     ]
   },
   {

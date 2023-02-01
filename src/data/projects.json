@@ -54,7 +54,7 @@
       "github":"https://github.com/DARPADOS/mvc-pokeapi"
     },
     "tags": [
-      "thymeleaf", "java", "spring-boot", "tailwind"
+      "thymeleaf", "java-17", "spring-boot", "tailwind"
     ]
   },
   {
@@ -73,7 +73,7 @@
       "github":"https://github.com/DARPADOS/SX71-prestabooks"
     },
     "tags": [
-      "thymeleaf", "java", "spring-boot", "postgres"
+      "thymeleaf", "java-11", "spring-boot", "postgres"
     ]
   }
 ]

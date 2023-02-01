@@ -55,7 +55,14 @@
     "icon-color": "",
     "text-color": ""
   }, 
-  "java": {
+  "java-17": {
+    "label":"Java 17",
+    "bg-color": "",
+    "icon": "java",
+    "icon-color": "",
+    "text-color": ""
+  }, 
+  "java-11": {
     "label":"Java 11",
     "bg-color": "",
     "icon": "java",

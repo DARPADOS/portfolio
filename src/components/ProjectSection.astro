@@ -23,15 +23,31 @@ const lan = i18next.language
 	.projects-section {
 		margin: auto;
 		padding: calc(var(--top-padding) + 1rem) 1rem 1rem 1rem	;
-		max-width: 100ch;
+		max-width: fit-content;
 		height: 100vh;
 	}
 
 	.projects-card-wrap {
-		padding-top: 0.8rem;
+		margin-top: 0.8rem;
 		display: grid;
-/* 		gap: 10px; */
-		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		grid-template-columns: repeat(1, 1fr);
 		align-items: flex-start;
+		width: 500px;
 	}
+
+	@media (min-width: 850px) {	
+		.projects-card-wrap {
+		gap: 10px;
+		grid-template-columns: repeat(2, 1fr);
+		width: 810px;
+	}
+
+	@media (min-width: 1200) {	
+		.projects-card-wrap {
+		gap: 15px;
+		grid-template-columns: repeat(2, 1fr);
+		width: 915px;
+	}
+}
 </style>

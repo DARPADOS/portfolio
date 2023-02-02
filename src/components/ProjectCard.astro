@@ -60,7 +60,7 @@ const {github, web} = links;
     color: var(--text-color);
     border-radius: 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    width: 400px;
+    width: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,4 +88,14 @@ const {github, web} = links;
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: 850px) {	
+  .card {
+    width: 400px;
+	}
+
+  @media (min-width: 1200px) {	
+  .card {
+    width: 450px;
+	}
 </style>

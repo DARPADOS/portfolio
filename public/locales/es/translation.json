@@ -8,7 +8,8 @@
   "nav": {
     "home.label": "Inicio",
     "projects.label": "Proyectos",
-    "contact.label": "Contacto"
+    "contact.label": "Contacto",
+    "select.languages.title": "Seleccionar lenguaje"
   },
   "projects": {
     "github.aria-label": "Enlace para acceder al github del proyecto ",

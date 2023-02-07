@@ -28,7 +28,7 @@ const links = [
   <ul class="pages">
     {links.map( el => <NavItem label={el.label} link={el.link}/>)}
   </ul>
-  <LanguageSelector showFlag={false} class="languages" />
+  <LanguageSelector showFlag={false} class="languages" title={t("nav.select.languages.title")} />
 </nav>
 
 
@@ -43,6 +43,7 @@ const links = [
   .navbar {
     position: fixed;
     width: 100vw;
+    min-height: 5rem;
     display: flex;
     justify-content: space-evenly ;
     padding: 1rem;

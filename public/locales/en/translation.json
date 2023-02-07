@@ -7,7 +7,8 @@
   "nav": {
     "home.label": "Home",
     "projects.label": "Projects",
-    "contact.label": "Contact"
+    "contact.label": "Contact",
+    "select.languages.title": "Select language"
   },
   "projects": {
     "github.aria-label": "Link to access the github of the project ",

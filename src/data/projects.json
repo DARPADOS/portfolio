@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "visible": false,
     "emoji": "🎓",
     "name": {
       "es": "Administrador de calificaciones academicas",
@@ -20,6 +21,7 @@
   },
   {
     "id": 2,
+    "visible": false,
     "emoji": "🧮",
     "name": {
       "es": "Calculadora de precio mínimo de venta",
@@ -40,6 +42,7 @@
   },
   {
     "id": 3,
+    "visible": true,
     "emoji": "🐲",
     "name": {
       "es": "Poke App",
@@ -59,12 +62,13 @@
   },
   {
     "id": 4,
+    "visible": true,
     "emoji": "📖",
     "name": {
       "es": "PrestaBooks",
       "en": "PrestaBooks"
     },
-    "image":"/images/projects/min-sell-price-calculator.webp",
+    "image":"/images/projects/prestabooks.png",
     "description": {
       "es": "👉 Aplicación web en Java y Thymeleaf para gestionar los usuarios, libros, autores y prestamos de una biblioteca creada para un curso de pruebas de software.",
       "en": "👉 Web application in Java and Thymeleaf to manage the users, books, authors and loans of a library created for a software testing course."

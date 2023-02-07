@@ -12,8 +12,8 @@ const lan = i18next.language
   </h1>
 	<div class="projects-card-wrap">
 		{projects.map( el => {
-			const {id, emoji, name, description, image, links, tags} = el
-			return <ProjectCard id={id} emoji={emoji} name={name[lan]} description={description[lan]} image={image} links={links} tags={tags} />
+			const {id, visible, emoji, name, description, image, links, tags} = el
+			return visible && <ProjectCard id={id} emoji={emoji} name={name[lan]} description={description[lan]} image={image} links={links} tags={tags} />
 		})}
 	</div>
 </div>
@@ -38,9 +38,10 @@ const lan = i18next.language
 
 	@media (min-width: 850px) {	
 		.projects-card-wrap {
-		gap: 10px;
-		grid-template-columns: repeat(2, 1fr);
-		width: 810px;
+			gap: 10px;
+			grid-template-columns: repeat(2, 1fr);
+			width: 810px;
+		}
 	}
 
 	@media (min-width: 1200) {	

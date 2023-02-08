@@ -68,7 +68,7 @@
       "es": "PrestaBooks",
       "en": "PrestaBooks"
     },
-    "image":"/images/projects/prestabooks.png",
+    "image":"/images/projects/prestabooks.webp",
     "description": {
       "es": "👉 Aplicación web en Java y Thymeleaf para gestionar los usuarios, libros, autores y prestamos de una biblioteca creada para un curso de pruebas de software.",
       "en": "👉 Web application in Java and Thymeleaf to manage the users, books, authors and loans of a library created for a software testing course."

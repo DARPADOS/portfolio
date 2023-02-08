@@ -2,11 +2,14 @@
   "home": {
     "title": "Home | Jose Luis Allaucca Tarazona",
     "presentation-title": "Hi I'm ",
-    "presentation": "I'm a <0>full stack developer</0> passionate about <1>learning</1> <2>new technologies</2> and not afraid of taking on <3>new challenges</3>. I have experience in <4>React.js</4>, <5>java</5> and <6>node.js</6>"
+    "description": "I'm a full stack developer passionate about learning new technologies, not afraid of taking on new challenges and with experience in React.js, java and node.js",
+    "presentation": "I'm a <0>full stack developer</0> passionate about <1>learning</1> <2>new technologies</2>, not afraid of taking on <3>new challenges</3> and with experience in <4>React.js</4>, <5>java</5> and <6>node.js</6>"
   },
   "nav": {
     "home.label": "Home",
+    "projects.link": "#projects",
     "projects.label": "Projects",
+    "contact.link": "#contact",
     "contact.label": "Contact",
     "select.languages.title": "Select language"
   },

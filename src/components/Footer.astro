@@ -1,0 +1,43 @@
+---
+import GithubIcon from "@icons/GithubIcon.astro";
+import LinkedinIcon from "@icons/LinkedinIcon.astro";
+import { t } from "i18next"; 
+
+const currentYear = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="copyright-wrap">
+    <p>
+      © {currentYear} Todos los derechos reservados.
+    </p>
+  </div>
+  <div class="social-icons">
+    <a class="link-icon" href="https://github.com/DARPADOS" target="_blank" aria-label={`${t('projects.github.aria-label')}`}><GithubIcon/></a>
+    <a class="link-icon" href="https://www.linkedin.com/in/jose-luis-allaucca-tarazona-98788517a/" target="_blank" aria-label={`${t('projects.github.aria-label')}`}><LinkedinIcon/></a>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    color: var(--text-color);
+    padding: 15px 50px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  }
+  .copyright-wrap > p{
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .link-icon {
+    display: block;
+    height: 2.5rem;
+    color: #212a37;
+  }
+</style>

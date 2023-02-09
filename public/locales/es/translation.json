@@ -7,9 +7,9 @@
   },
   "nav": {
     "home.label": "Inicio",
-    "projects.link": "#proyectos",
+    "projects.link": "proyectos",
     "projects.label": "Proyectos",
-    "contact.link": "#contacto",
+    "contact.link": "contacto",
     "contact.label": "Contacto",
     "select.languages.title": "Seleccionar lenguaje"
   },

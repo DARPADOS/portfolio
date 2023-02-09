@@ -1,12 +1,12 @@
 ---
 import projects from "../data/projects.json";
 import ProjectCard from "./ProjectCard.astro";
-import i18next from "i18next";
+import i18next, { t } from "i18next";
 
 const lan = i18next.language
 
 ---
-<div class="projects-section" id="projects">
+<div class="projects-section" id={t("nav.projects.link")}>
   <h1>
     Projects
   </h1>

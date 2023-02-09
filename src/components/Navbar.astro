@@ -7,14 +7,17 @@ import NavItem from "./NavItem.astro";
 
 const links = [
   {
+    id: "home",
     link: localizePath("/"),
     label: t("nav.home.label")
   },
   {
+    id: "projects-anchor",
     link: localizePath(`/#${t("nav.projects.link")}`),
     label: t("nav.projects.label")
   },
   {
+    id: "contact",
     link: localizePath(`/#${t("nav.contact.link")}`),
     label: t("nav.contact.label")
   },
@@ -22,11 +25,11 @@ const links = [
 ---
 
 <nav class="navbar">
-  <a href={localizePath("/")}>
+  <a href={localizePath("/")} id="logo">
     <Logo/>
   </a>
   <ul class="pages">
-    {links.map( el => <NavItem label={el.label} link={el.link}/>)}
+    {links.map( el => <NavItem id={el.id} label={el.label} link={el.link}/>)}
   </ul>
   <LanguageSelector showFlag={false} class="languages" title={t("nav.select.languages.title")} />
 </nav>
@@ -67,3 +70,21 @@ const links = [
     align-self: center;
   }
 </style>
+
+<script >
+  const scrollHome = (event) => {
+    if(document.location.pathname === '/'){
+      event.preventDefault()
+      window.history.pushState('','','/')
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      }); 
+    }
+  }
+  const anchorHome = document.getElementById("home");
+  const anchoLogo = document.getElementById("logo");
+  anchorHome.addEventListener("click", scrollHome)
+  anchoLogo.addEventListener("click", scrollHome)
+</script>

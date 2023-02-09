@@ -1,14 +1,15 @@
 ---
 
 export interface Props {
+  id: string,
 	link: string,
   label: string
 }
 
-const {link, label} = Astro.props
+const {id, link, label} = Astro.props
 ---
 <li>
-  <a href={link}>
+  <a id={id} href={link}>
     {label}
   </a>
 </li>

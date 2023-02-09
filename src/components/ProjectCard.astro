@@ -39,12 +39,19 @@ const {github, web} = links;
         })
       }
     </div>
-    { github && <a class="link-icon" href={github} target="_blank" aria-label={`${t('projects.github.aria-label')}${name}`}><GithubIcon/></a>}
-    { web && <a class="link-icon" href={web} target="_blank" aria-label={`${t('projects.web.aria-label')}${name}`}><LinkIcon/></a>}
+    <div class="links-wrap">
+      { github && <a class="link-icon" href={github} target="_blank" aria-label={`${t('projects.github.aria-label')}${name}`}><GithubIcon/></a>}
+      { web && <a class="link-icon" href={web} target="_blank" aria-label={`${t('projects.web.aria-label')}${name}`}><LinkIcon/></a>}
+    </div>
   </div>
 </div>
 
 <style>
+  .links-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
   .link-icon {
     height: 35px;
     align-self: flex-end;
@@ -61,7 +68,6 @@ const {github, web} = links;
     color: var(--text-color);
     border-radius: 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    width: 500px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -90,15 +96,4 @@ const {github, web} = links;
     justify-content: space-between;
   }
 
-  @media (min-width: 850px) {	
-    .card {
-      width: 400px;
-    }
-  }
-
-  @media (min-width: 1200px) {	
-    .card {
-      width: 450px;
-    }
-  }
 </style>

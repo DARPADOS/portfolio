@@ -10,7 +10,7 @@
     "preview": "npm run build && wrangler pages dev dist",
     "astro": "astro",
     "test-prod": "npm run build && npx servor dist index.html 3000 --reload --browse --static",
-    "publish": "wrangler pages publish dist"
+    "publish": "npm run build && wrangler pages publish dist"
   },
   "devDependencies": {
     "astro": "^1.9.1"

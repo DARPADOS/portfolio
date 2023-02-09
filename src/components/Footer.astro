@@ -6,23 +6,23 @@ import { t } from "i18next";
 const currentYear = new Date().getFullYear();
 ---
 <footer class="footer">
+  <div class="social-icons">
+    <a class="link-icon" href="https://github.com/DARPADOS" target="_blank" aria-label={`${t('footer.github.aria-label')}`}><GithubIcon/></a>
+    <a class="link-icon" href="https://www.linkedin.com/in/jose-luis-allaucca-tarazona-98788517a/" target="_blank" aria-label={`${t('footer.linkedin.aria-label')}`}><LinkedinIcon/></a>
+  </div>
   <div class="copyright-wrap">
     <p>
-      © {currentYear} Todos los derechos reservados.
+      © {currentYear} {t("footer.copyright")}
     </p>
-  </div>
-  <div class="social-icons">
-    <a class="link-icon" href="https://github.com/DARPADOS" target="_blank" aria-label={`${t('projects.github.aria-label')}`}><GithubIcon/></a>
-    <a class="link-icon" href="https://www.linkedin.com/in/jose-luis-allaucca-tarazona-98788517a/" target="_blank" aria-label={`${t('projects.github.aria-label')}`}><LinkedinIcon/></a>
   </div>
 </footer>
 
 <style>
   .footer {
     color: var(--text-color);
-    padding: 15px 50px ;
+    padding: 10px 50px ;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   }
@@ -33,6 +33,7 @@ const currentYear = new Date().getFullYear();
   .social-icons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 5px;
   }
   .link-icon {

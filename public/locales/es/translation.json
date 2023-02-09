@@ -16,5 +16,10 @@
   "projects": {
     "github.aria-label": "Enlace para acceder al github del proyecto ",
     "web.aria-label": "Enlace para acceder a la página web del proyecto "
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados.",
+    "github.aria-label": "Enlace a la cuenta personal de github",
+    "linkedin.aria-label": "Enlace al perfil de linkedin personal"
   }
 }

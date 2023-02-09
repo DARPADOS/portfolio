@@ -16,5 +16,10 @@
   "projects": {
     "github.aria-label": "Link to access the github of the project ",
     "web.aria-label": "Link to access the website of the project "
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "github.aria-label": "Link to personal github account",
+    "linkedin.aria-label":"Link to personal linkedin profile"
   }
 }

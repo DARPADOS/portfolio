@@ -14,6 +14,7 @@
     "select.languages.title": "Seleccionar lenguaje"
   },
   "projects": {
+    "title": "Proyectos",
     "github.aria-label": "Enlace para acceder al github del proyecto ",
     "web.aria-label": "Enlace para acceder a la página web del proyecto "
   },

@@ -8,7 +8,7 @@ import NavItem from "./NavItem.astro";
 const links = [
   {
     id: "home",
-    link: localizePath("/"),
+    link: localizePath("/#"),
     label: t("nav.home.label")
   },
   {
@@ -70,21 +70,3 @@ const links = [
     align-self: center;
   }
 </style>
-
-<script >
-  const scrollHome = (event) => {
-    if(document.location.pathname === '/'){
-      event.preventDefault()
-      window.history.pushState('','','/')
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth'
-      }); 
-    }
-  }
-  const anchorHome = document.getElementById("home");
-  const anchoLogo = document.getElementById("logo");
-  anchorHome.addEventListener("click", scrollHome)
-  anchoLogo.addEventListener("click", scrollHome)
-</script>

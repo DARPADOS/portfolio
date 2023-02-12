@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://jlallaucca.dev</loc>
+		<priority>1.00</priority>
+		<lastmod>2023-02-12</lastmod>
+	</url>
+	<url>
+		<loc>https://jlallaucca.dev/es/</loc>
+		<priority>0.50</priority>
+		<lastmod>2023-02-12</lastmod>
+	</url>
+</urlset>

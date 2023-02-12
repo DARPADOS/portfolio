@@ -21,7 +21,7 @@
   },
   {
     "id": 2,
-    "visible": false,
+    "visible": true,
     "emoji": "🧮",
     "name": {
       "es": "Calculadora de precio mínimo de venta",

@@ -46,9 +46,9 @@ const links = [
 
 <style>
 
-  ul {
+  .pages {
     list-style: none;
-    display: flex;
+    display: none;
     gap: 15px;
   }
   
@@ -79,7 +79,7 @@ const links = [
     width: 100vw;
     min-height: 5rem;
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: space-between ;
     padding: 1rem;
     align-content: center;
     height: 8vh;
@@ -100,4 +100,13 @@ const links = [
     height: fit-content;  
     align-self: center;
   }
+
+  @media (min-width: 600px) {
+		.pages {
+			display: flex;
+		}
+    .navbar {
+      justify-content: space-evenly;
+    }
+	}
 </style>

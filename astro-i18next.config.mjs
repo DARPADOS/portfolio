@@ -4,7 +4,6 @@ export default {
   locales: ["en", "es"],
   showDefaultLocale: false,
   i18nextServer: {
-    debug: true,
     backend: {
       loadPath: './public/locales/{{lng}}/{{ns}}.json',
     }
@@ -14,4 +13,5 @@ export default {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
   },
+
 };

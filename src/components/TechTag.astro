@@ -10,7 +10,7 @@ export interface Props {
 }
 const { label, backgroundColor, icon, iconColor, textColor } = Astro.props;
 ---
-<span class="tag" style={`background-color: ${backgroundColor}`}>
+<span class="tag" >
 
   <IconSelector icon={icon}/>
 
@@ -28,6 +28,7 @@ const { label, backgroundColor, icon, iconColor, textColor } = Astro.props;
     align-content: flex-end;
     gap: 5px;
     height: fit-content;
+    background-color: var(--background-color);
   }
   .label {
     display: inline-flex;

@@ -4,6 +4,7 @@ import { localizePath } from "astro-i18next";
 import { t } from "i18next";
 import Logo from "./Logo.astro";
 import NavItem from "./NavItem.astro";
+import { ThemeSwitch } from "astro-color-scheme";
 
 const links = [
   {
@@ -31,7 +32,15 @@ const links = [
   <ul class="pages">
     {links.map( el => <NavItem id={el.id} label={el.label} link={el.link}/>)}
   </ul>
-  <LanguageSelector showFlag={false} class="languages" title={t("nav.select.languages.title")} />
+  <div class="switches-wrap">
+    <ThemeSwitch defaultTheme={"system"} strategy={"button"}>
+      <button class="theme-button" type="button">
+        <p class="sun">🌞</p>
+        <p class="moon">🌛</p> 
+      </button>
+    </ThemeSwitch>
+    <LanguageSelector showFlag={false} class="languages" title={t("nav.select.languages.title")} />
+  </div>
 </nav>
 
 
@@ -40,9 +49,31 @@ const links = [
   ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
   
+  .switches-wrap {
+    display: flex;
+    align-content: end;
+    gap: 9px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .switches-wrap p {
+    font-size: 1.5rem;
+  }
+  .theme-button {
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+  }
+  .theme-button > .sun{
+    display: var(--light-display);
+  }
+  .theme-button > .moon{
+    display: var(--dark-display);
+  }
   .navbar {
     position: fixed;
     width: 100vw;
@@ -57,11 +88,11 @@ const links = [
   }
 
   .languages {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /*box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;*/
     font-weight: 600;
-    border: 2px solid #dadada;
+    border: 1px solid #dadada;
     appearance: none;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 5px;
     padding: 0.4em 0.6em; 
     font-family: system-ui, sans-serif;

@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "visible": false,
+    "visible": true,
     "emoji": "🎓",
     "name": {
       "es": "Administrador de calificaciones academicas",
       "en": "Academic Grades Manager"
     },
-    "image":"/images/projects/min-sell-price-calculator.webp",
+    "image":"/images/projects/grades-manager.webp",
     "description": {
       "es": "👉 Aplicación web creada con Next.js, Tailwind y Mongodb para gestionar las calificaciones academicas de los cursos de un semestre.",
       "en": "👉 Web application created with Next.js, Tailwind and Mongodb to manage the academic grades of the courses of a semester."
